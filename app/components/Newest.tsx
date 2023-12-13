@@ -6,14 +6,14 @@ import Image from "next/image";
 
 async function getData() {
   const query = `
-    *[_type == 'product'][0..4] | order(_createdAt desc) {
-        _id,
-          price,
-          name,
-          "slug": slug.current,
-          "categoryName": category->name,
-          "imageUrl": images[0].asset->url
-      }`;
+  *[_type == 'product'][0..4] | order(_createdAt desc) {
+    _id,
+      price,
+      name,
+      "slug": slug.current,
+      "categoryName": category->name,
+      "imageUrl": images[0].asset->url
+  }`;
 
   const data = await client.fetch(query);
 
@@ -55,14 +55,16 @@ export default async function Newest() {
                 <div>
                   <h3 className="text-sm text-gray-700">
                     <Link href={`/product/${product.slug}`}>
-                        {product.name}
+                      {product.name}
                     </Link>
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">
                     {product.categoryName}
                   </p>
                 </div>
-                   <p className="text-sm font-medium text-gray-500">£{product.price}</p> 
+                <p className="text-sm font-bold font-medium text-gray-800">
+                  £{product.price}
+                </p>
               </div>
             </div>
           ))}
