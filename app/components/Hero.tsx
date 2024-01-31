@@ -17,7 +17,7 @@ export default async function Hero() {
       <div className="mb-8 flex flex-wrap justify-between md:mb-16">
         <div className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:w-1/3 lg:pb-24 lg:pt-48">
           <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:mb-8 md:text-6xl">
-            Smokin' Soon: Flavor Unleashed Here!
+            Uncover the Art of Imperfection at Flow.
           </h1>
           <p className="max-w-md leading-relaxed text-gray-500 xl:text-lg">
             Embark on Flavorful Adventures with KeepSmiling24. Unveiling a World
@@ -38,13 +38,13 @@ export default async function Hero() {
           </div>
 
           <div className="overfow-hidden bg-gray-100 shadow-lg">
-            <Image 
-                src={urlFor(data.image2).url()} 
-                alt="Hero Image 2" 
-                className="h-full w-full object-cover object-center rounded-lg shadow-lg" 
-                width={500}
-                height={500}
-                priority
+            <Image
+              src={urlFor(data.image2).url()}
+              alt="Hero Image 2"
+              className="h-full w-full object-cover object-center rounded-lg shadow-lg"
+              width={500}
+              height={500}
+              priority
             />
           </div>
         </div>
@@ -52,26 +52,26 @@ export default async function Hero() {
 
       <div className="flex flex-col justify-between gap-8 md:flex-row">
         <div className="flex h-12 w-96 divide-x overflow-hidden rounded-lg border">
-            <Link
-                href="/CBD"
-                className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
-            >
-                CBD
-            </Link>
+          <Link
+            href="/CBD"
+            className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+          >
+            CBD
+          </Link>
 
-            <Link
-                href="/Accessories"
-                className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
-            >
-                Accessories
-            </Link>
+          <Link
+            href="/Accessories"
+            className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+          >
+            Accessories
+          </Link>
 
-            <Link
-                href="/T-Shirts"
-                className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
-            >
-                T-Shirts
-            </Link>
+          <Link
+            href="/T-Shirts"
+            className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+          >
+            T-Shirts
+          </Link>
         </div>
       </div>
     </section>

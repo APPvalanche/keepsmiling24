@@ -8,9 +8,9 @@ import { useShoppingCart } from "use-shopping-cart";
 
 const links = [
   { name: "Home", href: "/" },
-  { name: "CBD", href: "/CBD" },
-  { name: "Accessories", href: "/Accessories" },
-  { name: "T-Shirts", href: "/T-Shirts" },
+  { name: "Serveware", href: "/Serveware" },
+  { name: "Decoration", href: "/Decoration" },
+  { name: "Art", href: "/Art" },
 ];
 
 export default function Navbar() {
@@ -20,9 +20,7 @@ export default function Navbar() {
     <header className="mb-8 border-b">
       <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
         <Link href="/">
-          <h1 className="text-2xl md:text-3xl font-bold">
-            LOGO<span className="text-primary">24</span>
-          </h1>
+          <img src="../assets/flow.logo.png" alt="logo" width="150px" />
         </Link>
 
         <nav className="hidden gap-12 lg:flex 2xl:ml-16">

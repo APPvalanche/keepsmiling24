@@ -31,7 +31,7 @@ export default async function Newest() {
             Our Newest Product
           </h2>
           <Link className="text-primary flex items-center gap-x-1" href="/all">
-            See All{" "}
+            See All{""}
             <span>
               <ArrowBigRightIcon />
             </span>
