@@ -26,7 +26,7 @@ export default async function Hero() {
         </div>
 
         <div className="mb-12 flex w-full md:mb-16 lg:w-2/3">
-          <div className="relative left-12 top-12 z-10 -ml-12 shadow-lg overflow-hidden rounded-lg bg-gray-100 md:left-16 md:top-16 lg:ml-0">
+          <div className="relative left-12 top-12 z-10 -ml-12 shadow-lg overflow-hidden rounded-lg rounded-bl-full bg-gray-100 md:left-16 md:top-16 lg:ml-0">
             <Image
               src={urlFor(data.image1).url()}
               alt="Header Photo"
@@ -41,7 +41,7 @@ export default async function Hero() {
             <Image
               src={urlFor(data.image2).url()}
               alt="Hero Image 2"
-              className="h-full w-full object-cover object-center rounded-lg shadow-lg"
+              className="h-full w-full object-cover object-center rounded-lg rounded-tr-full shadow-lg"
               width={500}
               height={500}
               priority
@@ -53,24 +53,24 @@ export default async function Hero() {
       <div className="flex flex-col justify-between gap-8 md:flex-row">
         <div className="flex h-12 w-96 divide-x overflow-hidden rounded-lg border">
           <Link
-            href="/CBD"
+            href="/Serveware"
             className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
           >
-            CBD
+            Serveware
           </Link>
 
           <Link
-            href="/Accessories"
+            href="/Decoration"
             className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
           >
-            Accessories
+            Decoration
           </Link>
 
           <Link
-            href="/T-Shirts"
+            href="/Art"
             className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
           >
-            T-Shirts
+            Art
           </Link>
         </div>
       </div>
