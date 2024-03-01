@@ -5,6 +5,7 @@ import { ShoppingBag } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useShoppingCart } from "use-shopping-cart";
+import Image from "next/image";
 
 const links = [
   { name: "Home", href: "/" },
@@ -16,11 +17,12 @@ const links = [
 export default function Navbar() {
   const pathname = usePathname();
   const { handleCartClick } = useShoppingCart();
+  
   return (
     <header className="mb-8 border-b">
       <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
         <Link href="/">
-          <img src="../assets/flow.logo.png" alt="logo" width="150px" />
+          <Image src="/logo.png" width={120} height={50} alt="Logo brand" />
         </Link>
 
         <nav className="hidden gap-12 lg:flex 2xl:ml-16">

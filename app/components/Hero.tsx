@@ -20,8 +20,11 @@ export default async function Hero() {
             Uncover the Art of Imperfection at Flow.
           </h1>
           <p className="max-w-md leading-relaxed text-gray-500 xl:text-lg">
-            Embark on Flavorful Adventures with KeepSmiling24. Unveiling a World
-            of Premium Smoker Supplies - Coming Soon!
+            At Flow, we believe that true beauty lies in embracing the
+            imperfect, the transient, and the authentic. Inspired by the ancient
+            <span className="font-bold"> Japanese philosophy</span> of Wabi
+            Sabi, our brand celebrates the inherent elegance found in the
+            natural world and in the simple moments of everyday life.
           </p>
         </div>
 
@@ -29,7 +32,7 @@ export default async function Hero() {
           <div className="relative left-12 top-12 z-10 -ml-12 shadow-lg overflow-hidden rounded-lg rounded-bl-full bg-gray-100 md:left-16 md:top-16 lg:ml-0">
             <Image
               src={urlFor(data.image1).url()}
-              alt="Header Photo"
+              alt="Hero Image"
               className="h-full w-full object-cover object-center"
               width={500}
               height={500}
@@ -37,11 +40,11 @@ export default async function Hero() {
             />
           </div>
 
-          <div className="overfow-hidden bg-gray-100 shadow-lg">
+          <div className="overfow-hidden bg-gray-100 shadow-lg rounded-tr-full">
             <Image
               src={urlFor(data.image2).url()}
               alt="Hero Image 2"
-              className="h-full w-full object-cover object-center rounded-lg rounded-tr-full shadow-lg"
+              className="h-full w-full object-cover object-center rounded-tr-full shadow-lg"
               width={500}
               height={500}
               priority

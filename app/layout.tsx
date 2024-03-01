@@ -8,7 +8,7 @@ import ShoppingCartModal from "./components/ShoppingCartModal";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "HomeFlow",
+  title: "Flow",
   description: "Created by APPvalanche.com",
 };
 
